@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Custom Event">
+        <template lwc:if={displayMessage}>
+            <p class="slds-var-p-around_small">Welcome to Learn Custom Event</p>
+        </template>
+        <div class="slds-var-p-around_small">
+            <c-child-custom-event-lwc ondisplaymsg = {displayMessageHandler}></c-child-custom-event-lwc>
+        </div>
+    </lightning-card>
+</template>
